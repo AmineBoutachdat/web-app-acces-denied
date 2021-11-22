@@ -10,6 +10,9 @@ import UpdateProfile from './components/UpdateProfile';
 import Dashboard from './components/Dashboard';
 import PrivateRoute from './components/PrivateRoute';
 import SearchCar from './pages/SearchCar';
+import LoanCalculator from './components/LoanCalculator';
+import EvaluateCar from './components/EvaluateCar';
+
 
 import PublishCar from './pages/PublishCar';
 import Contact from './pages/Contact';
@@ -28,7 +31,7 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
-              <Route path="/contact-us" component={Contact}  />
+              <Route path="/contact-us" component={LoanCalculator}  />
 
               <Route path="/buy" component={SearchCar}  />
               <PrivateRoute path="/sell" component={PublishCar} />
