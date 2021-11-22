@@ -70,7 +70,7 @@ const Nice = () =>(
     >
       {({ handleSubmit, form, submitting, pristine, values }) => (
         <form class="form" onSubmit={handleSubmit}>
-          <Container>
+          <Container class="background">
             <Row>
                 <Col>
           <div>
