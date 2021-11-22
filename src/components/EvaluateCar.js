@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 //import Styles from './Styles'
 import { Form, Field } from 'react-final-form'
-import {DropdownButton, Dropdown, Col, Row, Container, Button} from 'react-bootstrap'
+import {DropdownButton, Dropdown, Col, Row, Container, Button, Form as FormSelection} from 'react-bootstrap'
 import "../layout/LoanCalc.css"
 
 
@@ -15,6 +15,8 @@ const onSubmit = async values => {
         price= price-(price/100*20);
     }else if (values.purchase>5){
         price = price -(price/100*10)
+    }else if (values.purchase>=10){
+        price = price -(price/100*50)
     }
     
 
@@ -82,11 +84,11 @@ const Nice = () =>(
             <Error name="brandName" />
           </div>
           <Condition when="brandName" is="Mercedes"> Type
-          <DropdownButton name="type" id="type" title="Dropdown Button">
-            <Dropdown.Item href="#">Class A</Dropdown.Item>
-            <Dropdown.Item href="#">Gle</Dropdown.Item>
-            <Dropdown.Item href="#">Black Series</Dropdown.Item>
-            </DropdownButton>
+          <FormSelection.Select aria-label="type" name="type" id="type">
+              <option value="Class a" selected>Class A</option>
+              <option value="Gle">Gle</option>
+              <option value="Black series">Black Series</option>
+            </FormSelection.Select>
           </Condition>
           <div>
             <label>Motor</label>
