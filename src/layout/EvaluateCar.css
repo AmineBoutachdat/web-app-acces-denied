@@ -1,8 +1,5 @@
 body {
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
-    background-image: url("https://i.imgur.com/GMmCQHC.png");
+    background-image: url("https://wallpaperaccess.com/full/2300062.png");
     background-repeat: no-repeat;
     background-size: 100% 100%
 }
@@ -16,7 +13,8 @@ body {
 }
 
 .form{
-    margin: 5rem;
+    margin: 5rem 20rem;
+    margin-bottom: 15rem;
 }
 
 .blue-text {
