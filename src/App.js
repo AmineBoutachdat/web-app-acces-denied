@@ -31,7 +31,7 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
-              <Route path="/contact-us" component={LoanCalculator}  />
+              <Route path="/contact-us" component={Contact}  />
 
               <Route path="/buy" component={SearchCar}  />
               <PrivateRoute path="/sell" component={PublishCar}/>
