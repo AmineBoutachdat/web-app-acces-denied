@@ -34,7 +34,7 @@ function App() {
               <Route path="/contact-us" component={LoanCalculator}  />
 
               <Route path="/buy" component={SearchCar}  />
-              <PrivateRoute path="/sell" component={PublishCar} />
+              <PrivateRoute path="/sell" component={PublishCar}/>
 
               { /* Default route -> 404  */ }
               <Route path="/" component={PageNotFound}  />
