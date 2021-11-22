@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 //import Styles from './Styles'
 import { Form, Field } from 'react-final-form'
 import {DropdownButton, Dropdown, Col, Row, Container, Button, Form as FormSelection} from 'react-bootstrap'
-import "../layout/LoanCalc.css"
+import "../layout/EvaluateCar.css"
 
 
 export default function EvaluateCar() {
@@ -45,7 +45,7 @@ const Condition = ({ when, is, children }) => (
 
 const Nice = () =>(
   
-    <Form
+    <Form 
       onSubmit={onSubmit}
       initialValues={{ mileage: 0, motortype: 'gasoline' }}
       validate={values => {
@@ -69,7 +69,7 @@ const Nice = () =>(
       }}
     >
       {({ handleSubmit, form, submitting, pristine, values }) => (
-        <form onSubmit={handleSubmit}>
+        <form class="form" onSubmit={handleSubmit}>
           <Container>
             <Row>
                 <Col>
@@ -159,12 +159,12 @@ const Nice = () =>(
               <Error name="Price" />
             </div>
           <div className="Buttons">
-            <Button type="submit" disabled={submitting}>
+            <button type="submit" disabled={submitting}>
               Submit
-            </Button>
-            <Button type="Button" onClick={form.reset} disabled={submitting}>
+            </button>
+            <button type="Button" onClick={form.reset} disabled={submitting}>
               Reset
-            </Button>
+            </button>
           </div>
           <pre><div id="priceResults"></div></pre>
                     </Col>
